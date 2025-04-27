@@ -288,6 +288,8 @@ h3 {
 }
 .join article span {
   display: none;
+  color: red;
+  font-size: 0.8rem;
 }
 .join article p input, .join article textarea {
   padding-top: 5px;

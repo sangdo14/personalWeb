@@ -1,3 +1,6 @@
+import { checkLogin } from './auth.js';
+checkLogin();
+
 UserList();
 
 async function UserList(pageNum = 0) {

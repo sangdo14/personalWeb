@@ -1,3 +1,6 @@
+import { checkLogin } from './auth.js';
+checkLogin();
+
 setTimeout(topShow, 1);
 setTimeout(h1Show, 1000);
 setTimeout(jobBoxShow, 2000);

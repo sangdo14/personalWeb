@@ -1,3 +1,6 @@
+import { checkLogin } from './auth.js';
+checkLogin();
+
 const loginForm = document.querySelector("form");
 
 loginForm.addEventListener("submit", requestLogin);
@@ -19,8 +22,8 @@ async function requestLogin(e) {
 
   // 반환된 result 값에 따라 로그인 판별
   if (result.isLogin) {
-    window.alert("로그인 되었습니다.");
-    window.location.href = "admin.html";
+    window.alert(result.username + " 님 로그인 되었습니다.");
+    window.location.href = "index.html";
   } else {
     window.alert("해당 정보의 사용자가 없습니다.");
   }

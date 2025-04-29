@@ -1,3 +1,6 @@
+import { checkLogin } from './auth.js';
+checkLogin();
+
 const form = document.querySelector('form');
 
 form.addEventListener('submit', e => {
@@ -97,6 +100,5 @@ async function sendForm(e) {
   const result = await data.json();
   alert(result.message);
   
-  location.href = "admin.html";
-  // location.reload();
+  location.href = "login.html";
 }

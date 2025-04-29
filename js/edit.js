@@ -1,3 +1,6 @@
+import { checkLogin } from './auth.js';
+checkLogin();
+
 const params = new URLSearchParams(window.location.search);
 const Getuserid = params.get("userid");
 const form = document.querySelector('form');

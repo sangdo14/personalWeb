@@ -1,0 +1,48 @@
+:root {
+  --point-lch: lch(88.54% 20.93 99.99);
+  --point-lch-code: 88.54% 20.93 99.99;
+  --sub1-lch: lch(78.86% 80.4 90.33);
+  --sub1-lch-code: 78.86% 80.4 90.33;
+
+  --black-lch: lch(0% 0 0);
+  --black-lch-code: 0% 0 0;
+  --gray-lch: lch(25.87% 4.63 257.59);
+  --gray-lch-code: 25.87% 4.63 257.59;
+
+  --font1-lch: lch(59.82% 64.06 282.02);
+  --font1-lch-code: 59.82% 64.06 282.02;
+  --side1-lch: lch(75.08% 25.4 265.76);
+  --side1-lch-code: 75.08% 25.4 265.76;
+}
+html {
+  font-size: 16px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: 'Noto Sans KR';
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+.btn1 {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: lch(var(--font1-lch-code) / 0.7);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  // background-color: black;
+  // background: linear-gradient(45deg, lch(var(--sub1-lch-code)), lch(var(--sub1-lch-code) / 0.5));
+  // border-radius: 3px;
+
+  // box-shadow: 10px 10px 20px lch(60.1% 108.55 328.79 / 0.3);
+}

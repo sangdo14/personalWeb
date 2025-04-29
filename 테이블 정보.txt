@@ -1,0 +1,33 @@
+loginController
+- 로그인
+- 로그인체크
+- 로그아웃
+
+memberController
+- 회원가입
+- 회원보기
+- 회원삭제
+
+CREATE TABLE member (
+userid VARCHAR(50) primary key,
+password VARCHAR(255) NOT NULL,
+name VARCHAR(50) NOT NULL,
+email VARCHAR(100),
+intro VARCHAR(600),
+created_dt DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+------------------------------------------------------------------
+
+boardController
+- 글보기
+- 글쓰기
+- 글삭제
+
+CREATE TABLE board(
+id int auto_increment primary key,
+userid varchar(50) not null,
+message text not null,
+is_private BOOLEAN DEFAULT FALSE,
+created_dt DATETIME DEFAULT CURRENT_TIMESTAMP
+);

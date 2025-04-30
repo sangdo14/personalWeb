@@ -4,8 +4,8 @@ class MyHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <nav style="z-index:1;">
-        <a href="index.html"><i class="fa-solid fa-square-h"></i></a>
-        <a href="profile.html"><i class="fa-solid fa-circle-info"></i></a>
+        <a href="index.html" id="index"><i class="fa-solid fa-square-h"></i></a>
+        <a href="profile.html" id="profile"><i class="fa-solid fa-circle-info"></i></a>
         <a href="join.html" id="join"><i class="fa-solid fa-square-plus"></i></a>
         <a href="login.html" id="login"><i class="fa-solid fa-arrow-right-to-bracket" ></i></a>
         <a href="#" id="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>

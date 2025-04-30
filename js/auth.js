@@ -10,6 +10,7 @@ export async function checkLogin() {
 
   document.querySelector("#index").style.display = "block";
   document.querySelector("#profile").style.display = "block";
+  
   if (result.isLogin) {
     document.querySelector("#join").style.display = "none";
     document.querySelector("#login").style.display = "none";

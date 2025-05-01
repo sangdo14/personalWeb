@@ -1,3 +1,4 @@
+import { API_URL } from "./config.js";
 import { checkLogin } from './auth.js';
 checkLogin();
 
@@ -12,7 +13,7 @@ async function requestLogin(e) {
   const loginDTO = Object.fromEntries(formData.entries());
 
   //DTO형식의 폼정보를 문자화해서 Post 요청 서버에 전달
-  const res = await fetch("http://127.0.0.1:8080/api/login", {
+  const res = await fetch(`${API_URL}/api/login`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     credentials: "include",

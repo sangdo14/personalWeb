@@ -1,3 +1,4 @@
+import { API_URL } from "./config.js";
 import { checkLogin } from './auth.js';
 checkLogin();
 
@@ -5,7 +6,7 @@ UserList();
 
 async function UserList(pageNum = 0) {
   // API로 데이터 불러오기
-  const res = await fetch(`http://localhost:8080/api/admin?page=${pageNum}`, {
+  const res = await fetch(`${API_URL}/api/admin?page=${pageNum}`, {
     method: "GET",
     credentials: "include",
   });
@@ -68,7 +69,7 @@ function bindingDelEvent(btns) {
 
       const userid = e.currentTarget.getAttribute("data-userid}");
       const data = await fetch(
-        `http://127.0.0.1:8080/api/admin/del/${userid}`,
+        `${API_URL}/api/admin/del/${userid}`,
         {
           method: "DELETE",
           credentials: "include",

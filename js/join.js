@@ -1,3 +1,4 @@
+import { API_URL } from "./config.js";
 import { checkLogin } from './auth.js';
 checkLogin();
 
@@ -90,7 +91,7 @@ async function sendForm(e) {
   //formData.entries(); --->  [ [key,value], [key,value], [key,value] ]
   //Object.fromEntries([ [key,value], [key,value], [key,value] ]) ---> {key: value, key:value, key: value}
 
-  const data = await fetch("http://127.0.0.1:8080/api/join/create", {
+  const data = await fetch(`${API_URL}/api/join/create`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     credentials: "include",

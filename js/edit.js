@@ -1,3 +1,4 @@
+import { API_URL } from "./config.js";
 import { checkLogin } from './auth.js';
 checkLogin();
 
@@ -20,7 +21,7 @@ form.addEventListener('submit', e => {
 
 // 수정 정보 불러오기
 async function getForm() {
-  const data = await fetch(`http://127.0.0.1:8080/api/admin/edit/${Getuserid}`, {
+  const data = await fetch(`${API_URL}/api/admin/edit/${Getuserid}`, {
     method: "GET",
     credentials: "include",
   });
@@ -120,7 +121,7 @@ async function sendForm(e) {
   //Object.fromEntries([ [key,value], [key,value], [key,value] ]) ---> {key: value, key:value, key: value}
 
   //PUT 방식으로 요청을 보내 DB데이터 수정
-  const data = await fetch("http://127.0.0.1:8080/api/admin/update", {
+  const data = await fetch(`${API_URL}/api/admin/update`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     credentials: "include",

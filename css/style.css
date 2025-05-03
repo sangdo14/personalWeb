@@ -57,8 +57,10 @@ nav {
   gap: 13px;
 }
 nav a {
-  display: none;
   font-size: 1.5rem;
+}
+nav #logout, nav #admin {
+  display: none;
 }
 
 .profile {
@@ -410,4 +412,4 @@ h3 {
   padding: 2px 8px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=STYLE.CSS.map */

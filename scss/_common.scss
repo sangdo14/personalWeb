@@ -9,7 +9,10 @@ nav {
   gap: 13px;
   
   a{
-    display: none;
     font-size: 1.5rem;
+  }
+
+  #logout, #admin{
+    display: none;
   }
 }

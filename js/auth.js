@@ -8,9 +8,6 @@ export async function checkLogin() {
   });
   const result = await res.json();
 
-  document.querySelector("#index").style.display = "block";
-  document.querySelector("#profile").style.display = "block";
-  
   if (result.isLogin) {
     document.querySelector("#join").style.display = "none";
     document.querySelector("#login").style.display = "none";
